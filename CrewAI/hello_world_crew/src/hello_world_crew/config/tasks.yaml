@@ -1,0 +1,15 @@
+feature_decompose:
+  description: >
+    Review the feature requirement and decompose it to one or multiple tasks
+  expected_output: >
+    A list of tasks in the format:
+    - title: <short title>
+      description: <clear, specific description of the task>
+      priority: <low | medium | high> (optional)
+  agent: product_manager
+task_development:
+  description: >
+    Review task given by product manager and implement the task
+  expected_output: >
+    A piece of working code for the task
+  agent: developer
